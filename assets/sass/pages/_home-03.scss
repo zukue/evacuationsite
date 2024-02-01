@@ -1,0 +1,271 @@
+/* Home 03 */
+.header-home-03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    .info-bar-bottom .icon-part li a{
+        border: 1px solid rgba(#000,.3);
+        &:hover{
+            border-color: var(--main-color-one);
+        }
+    }
+    .indurance-nav-right {
+        width: 22%;
+        height: 100%;
+        padding-top: 26px;
+        &:after {
+            display: none;
+        }
+        span {
+            font-style: normal;
+        }
+    }
+    .navbar-area.nav-style-02 {
+        background-color: transparent;
+        .nav-container {
+            position: relative;
+            width: 82%;
+            // overflow: hidden;
+            &:after{
+                position: absolute;
+                left: 0px;
+                top: 0;
+                width: calc( 100% - 27% );
+                background-color: #191d33;
+                content: '';
+                height: 100%;
+                z-index: -1;
+            }
+            &:before{
+                position: absolute;
+                right: 25%;
+                top: 0;
+                width: 40px;
+                background-color: #191e33;
+                height: 100%;
+                content: '';
+                // z-index: ;
+                z-index: -1;
+                transform: skew(-20deg);
+            }
+        }
+    }
+}
+
+// Home 03 Banner 
+.home-03-banner {
+    background: no-repeat center / cover;
+    position: relative;
+    .subtitle {
+        color: var(--heading-color);
+        font-size: 30px;
+        line-height: 40px;
+        font-family: var(--heading-font);
+        font-weight: 500;
+        margin-bottom: 10px;
+        display: block;
+        text-transform: capitalize;
+    }
+    .title {
+        font-size: 70px;
+        line-height: 80px;
+        font-weight: 700;
+        color: var(--main-color-one); 
+    }
+    p {
+        color: var(--paragraph-color);
+        max-width: 650px;
+        font-size: 20px;
+        line-height: 30px;
+        word-break: break-all;
+    }
+    .btn-wrapper{
+        margin-top: 30px;
+    }
+    .home-03-banner-content {
+        padding: 330px 0 355px;
+    }
+}
+
+// Feature Home 03
+.feature-home-03 {
+    margin-top: -200px;
+    .feature-item-left {
+        background-color: var(--main-color-one);
+        padding: 64px 40px 56px;
+        margin-bottom: 30px;
+        .feature-item-top {
+            display: flex;
+            .feature-top-image {
+                position: relative;
+                .absolute-content {
+                    position: absolute;
+                    top: 10%;
+                    left: 10%;
+                    width: 80%;
+                    height: 80%;
+                    background-color: var(--main-color-one);
+                    text-align: center;
+                    span {
+                        color: #fff;
+                        font-family: var(--heading-font);
+                        font-size: 60px;
+                        font-weight: 700;
+                        line-height: 120px;
+                    }
+                }
+            }
+            .feature-top-content {
+                align-self: center;
+                margin-left: 20px;
+                flex:1;
+                .title {
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #fff;
+                }
+            }
+        }
+        .feature-item-title {
+            margin-top: 36px;
+            .title {
+                color: #fff;
+            }
+        }
+    }
+}
+
+// Indurance Feature Item 03
+.indurance-feature-item-03 {
+    margin-bottom: 30px;
+    .feature-item-image {
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center;
+        height: 240px;
+    }
+    .feature-item-content {
+        padding: 30px 30px 18px;
+        text-align: center;
+        position: relative;
+        .feature-icon{
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 15px;;
+            color: #fff;
+        }
+        .title{
+            color: #fff;
+            font-size: 22px;
+            line-height: 30px;;
+        } 
+        p {
+            color: rgba(#fff,.8);
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    .feature-item-content.yellow-bg {
+        background-color: #feb52d;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: -15px;
+            transform: translateX(-50%) rotate(45deg);
+            width: 30px;
+            height: 30px;
+            background-color: #feb52d;
+            z-index: 1;
+        }
+    }
+    .feature-item-content.red-bg {
+        background-color: #fa0013;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -15px;
+            transform: translateX(-50%) rotate(45deg);
+            width: 30px;
+            height: 30px;
+            background-color: #fa0013;
+            z-index: 1;
+        }
+    }
+}
+
+// About Home 03
+.about-home-03 {
+    .about-left {
+        .title{
+            font-size: 48px;
+            line-height: 58px;
+            text-transform: capitalize;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .btn-wrapper{
+            margin-top: 27px;
+        }
+    }
+    .about-right {
+        position: relative;
+        .about-image {
+            text-align: right;
+            img {
+                width: 80%;
+                margin-left: auto;
+            }
+        }
+        .signature-part {
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            width: 300px;
+            padding: 30px;
+            background-color: var(--secondary-color);
+            p {
+                color: #fff;
+            }
+            img {
+                width: auto;
+            }
+        }
+    }
+}
+
+// Projects Home 03
+.projects-home-03 {
+    position: relative;
+    background: no-repeat top center / 100% 70%;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70%;
+        background-color: rgba(0,0,0,.8);
+    }
+    .section-title {
+        h2.title, p {
+            color: #fff;
+        }
+    }
+}
+
+// Quote Home 03
+.quote-home-03 {
+    .indurance-about-item-02 {
+        .about-content {
+            background-color: var(--white-soft-color);
+        }
+    }
+}

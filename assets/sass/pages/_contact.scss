@@ -1,0 +1,42 @@
+/* Contact */
+.contact-area {
+    .widget-nav-menu {
+        background-color: var(--white-soft-color);
+        padding: 40px 30px;
+        ul {
+            li {
+                text-transform: capitalize;
+                +li {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .call-us-part,
+    .mail-part,
+    .address-part {
+        display: flex;
+        align-items: center;
+        span {
+            display: block;
+            color: $heading-color;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+        i {
+            color: var(--main-color-one);
+            font-size: 40px;
+            margin-right: 10px;
+        }
+    } 
+
+    .contact-title {
+        margin-bottom: 60px;
+        .title-paragraph {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            text-transform: capitalize;
+        }
+    }
+}

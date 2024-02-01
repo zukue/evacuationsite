@@ -1,0 +1,18 @@
+/* Service Single */
+.service-detail-area {
+    .service-content {
+        margin-top: 40px;
+        ul {
+            margin-top: 20px;
+            li {
+                +li {
+                    margin-top: 10px; 
+                }
+                i {
+                    color: var(--main-color-one);
+                    margin-right: 10px;
+                }           
+            }
+        }
+    }
+}

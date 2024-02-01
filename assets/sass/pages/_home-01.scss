@@ -1,0 +1,693 @@
+/*===========================
+    Home 01 
+===========================*/
+.home-01-banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(45deg,#fff, transparent);
+    }
+    .subtitle {
+        color: var(--heading-color);
+        font-size: 30px;
+        line-height: 40px;
+        font-family: var(--heading-font);
+        font-weight: 500;
+        margin-bottom: 10px;
+        display: block;
+        text-transform: capitalize;
+    }
+    .title {
+        font-size: 70px;
+        line-height: 80px;
+        font-weight: 700;
+        color: var(--main-color-one); 
+    }
+    p {
+        color: var(--paragraph-color);
+        max-width: 650px;
+        font-size: 20px;
+        line-height: 30px;
+        word-break: break-all;
+    }
+    .btn-wrapper{
+        margin-top: 30px;
+    }
+    .home-01-banner-content {
+        padding: 177px 0 315px;
+    }
+}
+
+// Feature Section
+.features-section {
+    overflow: hidden;
+    margin-top: -150px;
+}
+
+// Indurance Feature Item
+.indurance-feature-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-bottom: 150px solid var(--main-color-one);
+        border-left: 150px solid transparent;
+        transition: $transition;
+    }
+    &:hover {
+        &:before {
+            border-bottom: 300px solid var(--main-color-one);
+            border-left: 300px solid transparent;
+        }
+    }
+    .feature-image {
+        position: relative;
+        width: 93%;
+        margin-bottom: 7%;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(90deg,#000000, transparent);
+        }
+    }
+    .feature-content {
+        position: absolute;
+        left: 30px;
+        bottom: 45px;
+        .subtitle {
+            color: var(--main-color-one);
+            font-family: var(--heading-font);
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .title {
+            color: var(--white-color);
+            width: 80%;
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}
+
+// About Section
+.about-section {
+    .tab-content{
+        padding-left: 20px;
+        .title{
+            font-size: 26px;
+            line-height: 36px;
+        }
+    }
+    .nav-pills {
+        .nav-link {
+            border-radius: 0;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            background-color: var(--white-soft-color);
+            padding: 15px 30px;
+            cursor: pointer;
+            transition: $transition;
+            position: relative;
+            +a {
+                margin-top: 30px;
+            }  
+            .title{
+                font-size: 18px;
+                line-height: 26px;
+            }
+            i {
+                color: var(--main-color-one);
+                font-size: 50px;
+                margin-right: 20px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -15px;
+                transform: translateY(-50%);
+                border-top: 10px solid transparent;
+                border-left: 15px solid var(--main-color-one);
+                border-bottom: 10px solid transparent;
+                transition: $transition;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        .active {
+            background-color: var(--main-color-one)!important;
+            i,
+            .title {
+                color: var(--white-color);
+            }
+            &:before {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    .tab-content {
+        ul {
+            margin-top: 20px;
+            li {
+                +li {
+                    margin-top: 10px; 
+                }
+                i {
+                    color: var(--main-color-one);
+                    margin-right: 10px;
+                }           
+            }
+        }
+    }
+}
+
+// Indurance Service Item
+.indurance-service-item {
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px;
+    overflow: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        left: -100%;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        // background-color: var(--main-color-one);
+        transition: $transition;
+    }
+    .service-icon {
+        color: var(--main-color-one);
+        margin-bottom: 15px;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .service-content{
+        .title{
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    &:hover {
+        &:before {
+            left: 0;
+        }
+    }
+}
+
+// Services Section
+.services-section {
+    .prev-arrow,
+    .next-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        background-color: #e6e7e5;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        transition: $transition;
+        z-index: 1;
+        &:hover {
+            color: var(--white-color);
+            background-color: var(--main-color-one);
+        }
+    }
+    .prev-arrow {
+        left: -70px;
+    }
+    .next-arrow {
+        right: -70px;
+    }
+    .slick-slide {
+        margin: 0 10px;
+    }
+}
+
+// Video Section
+.videos-section {
+    background: url('../images/home-01/video-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -5%;
+        width: 65%;
+        height: 100%;
+        background-color: var(--main-color-one);
+        transform: skew(-12deg);
+    }
+    .section-title-inner{
+        .title{
+            font-size: 36px;
+            line-height: 46px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+    }
+    .video-play-button {
+        .button-video {
+            display: inline-block;
+            font-size: 20px;
+            color: var(--main-color-one);
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: var(--white-color);
+            border-radius: 50%;
+            cursor: pointer;
+            animation: ripple 1s linear infinite;
+        }
+    }
+    .video-content {
+        .title,i{
+            color: var(--white-color);
+        }
+        p {
+            color: var(--white-color);
+            opacity: .8;
+            line-height: 1.6;
+        }
+    }
+}
+
+// Indurance About Item
+.indurance-about-item {
+    display: flex;
+    margin-bottom: 15px;
+    &:hover{
+        .about-icon{
+            transform: rotateY(360deg);
+        }
+    }
+    .about-icon {
+        margin-right: 20px;
+        transition: all 500ms;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .about-content{
+        .title{
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+// Counter Section
+.counter-section {
+    background: url('../images/home-01/counter-bg.jpg') no-repeat center / cover;
+    background-color: var(--secondary-color);
+}
+
+// Indurance Single Counter
+.indurance-single-counter {
+    text-align: center;
+    margin-bottom: 30px;
+    .counter-icon {
+        color: var(--main-color-one);
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 15px;
+    }
+    .title {
+        color: var(--white-color);
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 700;
+    }
+    .counter-title {
+        color: var(--white-color);
+        opacity: .8;
+        font-size: 18px;
+        line-height: 28px;
+        font-family: var(--body-font);
+        text-transform: capitalize;
+    }
+}
+
+// Indurance Projcet Item
+.indurance-project-item {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    .project-image{
+        img{
+            width: 100%;
+        }
+    }
+    .hover-state {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        background-color: rgba(255, 88, 32, .9);
+        transition: $transition;
+        transform: scale(0,0);
+        .hover-state-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            h6.title {
+                color: var(--white-color);
+            }
+            span {
+                color: var(--white-color);
+                opacity: .8;
+                text-transform: capitalize;
+            }
+        }
+    }
+    &:hover {
+        .hover-state {
+            transform: scale(1,1);
+        }
+    }
+}
+
+// Partners Section
+.partners-section {
+    .partners-title {
+        margin-bottom: 40px;
+        text-align: center;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 16px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-top: 1px dashed var(--border-color);
+            z-index: -1;
+        }
+        .title {
+            background-color: var(--white-color);
+            display: inline-block;
+            padding: 0 20px;
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 600;
+        }
+    }
+    .single-partners-slide {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: auto;
+        }
+    }
+}
+
+// Quote Section
+.quote-section {
+    background: no-repeat center / cover;
+}
+
+// Indurance About Item 02
+.indurance-about-item-02 {
+    .about-content {
+        padding: 24px 40px 26px;
+        background-color: var(--white-color);
+        .title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 32px;
+        }
+        p {
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+    }
+}
+
+// Testimonial Section
+.testimonial-section {
+    position: relative;
+    background: url('../images/home-01/testimonial-bg.jpg') no-repeat center / cover;
+    .testimonial-title {
+        margin-bottom: 60px;
+        h2.title {
+            color: var(--white-color);
+            span {
+                color: var(--main-color-one);
+            }
+        }
+    }
+    .slick-slide {
+        margin: 0 15px;
+    }
+}
+
+// Indurance Testimonial Item
+.indurance-testimonial-item {
+  .testimonial-content {
+      padding: 30px;
+      border: 1px solid rgba(#fff,.3);
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 40px;
+        bottom: -16px;
+        width: 22px;
+        height: 30px;
+        border-right: 1px solid rgba(#fff,.3);
+        border-bottom: 1px solid rgba(#fff,.3);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(54deg);
+        background-color: var(--secondary-color);
+      }
+      span {
+          color: rgba(#fff,.8);
+          font-size: 16px;
+          line-height: 26px;
+          font-family: var(--heading-font);
+          font-style: italic;
+          margin-bottom: 0;
+      }
+  }
+  .testimonial-author {
+      display: flex;
+      margin-top: 40px;
+      .author-image {
+          margin-right: 20px;
+          img {
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              border: 2px solid rgba(#fff,.8);
+          }
+      }
+      .author-name {
+          align-self: center;
+          margin-top: 5px;
+          .title {
+              color: var(--white-color);
+              margin-bottom: 0px;
+              font-size: 18px;
+              line-height: 26px;
+          }
+          span {
+              color: var(--main-color-one);
+              font-size: 14px;
+              line-height: 24px;
+          }
+      }
+  }  
+}
+
+// News Section
+.news-section {
+    .prev-arrow,
+    .next-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        background-color: #e6e7e5;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        transition: $transition;
+        z-index: 1;
+        &:hover {
+            color: var(--white-color);
+            background-color: var(--main-color-one);
+        }
+    }
+    .prev-arrow {
+        left: -70px;
+    }
+    .next-arrow {
+        right: -70px;
+    }
+    .slick-slide {
+        margin: 0 15px;
+    }
+}
+
+// Indurance News Item
+.indurance-news-item {
+    &:hover {
+        .news-image {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+    .news-image {
+        position: relative;
+        overflow: hidden;
+        .news-date {
+            padding: 20px 20px 10px;
+            background-color: var(--main-color-one);
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            .title {
+                color: var(--white-color);
+                font-weight: 700;
+                line-height: 10px;
+                font-size: 24px;
+            }
+            span {
+                color: var(--white-color);
+                text-transform: capitalize;
+                opacity: .8;
+            }
+        }
+        img {
+            transition: $transition;
+            width: 100%;
+            transform: scale(1.05);
+        }
+    }
+    .news-content {
+        padding: 25px 20px;
+        border: 1px solid #e2e2e2;
+        .news-meta {
+            font-size: 14px;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+            a{
+                transition: all 500ms;
+                &:hover{
+                    color: var(--main-color-one);
+                }
+            }
+            i {
+                margin-right: 10px;
+            }
+            li {
+                display: inline-block;
+                +li {
+                    margin-left: 20px;
+                }
+            }
+        }
+        .title {
+            font-weight: 700;
+            transition: $transition;
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 17px;
+            &:hover {
+                color: var(--main-color-one);
+            }
+        }
+        p {
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+    }
+}
+
+// CTA Section
+.cta-section {
+    background: url('../images/home-01/cta-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    .cta-content {
+        .title {
+            color: var(--white-color);
+            line-height: 60px;
+            font-size: 36px;
+            font-weight: 700;
+        }
+    }
+    .cta-button {
+        text-align: right;
+        .template-btn {
+            font-size: 20px;
+        }
+    }
+}

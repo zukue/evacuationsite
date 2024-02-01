@@ -1,0 +1,89 @@
+/*-------------------------------------------------------------
+Theme Name: Indurance
+Theme URI: 
+Author: 
+Author URI: 
+Description: 
+Version: 1.0
+-------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography
+# Normalize
+# Accessibility
+# Globals
+# Alignments
+# Clearings
+# Posts and pages
+# Media
+# Captions
+# Galleries
+# Unit test
+# Gutenberg
+# Block Color Palette Colors
+# Nav bar 
+# Header
+# Footer Area
+# WIdgets
+# Accordion
+# Back Top
+# Preloader
+# Search Popup
+# Button
+# Form
+# Info Bar
+# Home 02 Info Bar
+# Home 01
+# Home 02
+# Home 03
+# About
+# Service
+# Service Single
+# Project
+# Project Single
+# Contact
+# Blog
+# Blog Single
+
+--------------------------------------------------------------*/
+
+
+//== Global Design
+@import "global/_mixins";
+@import "global/_variables";
+@import "global/_global";
+@import "global/_gutenberg";
+@import "global/_theme";
+
+//== Sections
+@import "sections/_navbar";
+@import "sections/_header";
+@import "sections/_footer";
+@import "sections/_widgets";
+
+//== Elements
+@import "elements/_accordion";
+@import "elements/_back_top";
+@import "elements/_preloader";
+@import "elements/_search_popup";
+@import "elements/_button";
+@import "elements/_floating-icon";
+@import "elements/_modal-content";
+@import "elements/_form";
+@import "elements/_info-bar";
+
+// == Pages
+@import "pages/_home-01";
+@import "pages/_home-02";
+@import "pages/_home-03";
+@import "pages/_about";
+@import "pages/_service";
+@import "pages/_service-single";
+@import "pages/_project";
+@import "pages/_project-single";
+@import "pages/_contact";
+@import "pages/_blog";
+@import "pages/_blog-single";

@@ -1,0 +1,24 @@
+/*---------------------------------------
+    ## Back Top
+---------------------------------------*/
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    color: var(--white-color);
+    text-align: center;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--main-color-one);
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: $transition;
+    padding-top: 1px;
+    &:hover {
+        background-color: var(--secondary-color);
+    }
+}

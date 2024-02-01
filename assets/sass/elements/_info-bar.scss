@@ -1,0 +1,181 @@
+/* Info Bar */
+.info-bar {
+    font-family: var(--heading-font);
+}
+
+.info-bar-top {
+    background-color: var(--white-soft-color);
+    padding: 15px 0;
+    li {
+        display: inline;
+    }
+    .info-top-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-social-icon {
+        li {
+            margin-right: 5px;
+            a {
+                transition: $transition;
+                &:hover {
+                    color: var(--main-color-one);
+                }
+            }
+        }
+    }
+    .top-link {
+        float: right;
+        li {
+            +li {
+                border-left: 1px solid var(--border-color);
+            }
+        }
+        a {
+            text-transform: capitalize;
+            display: inline-block;
+            padding: 0 10px;
+            transition: $transition;
+            font-size: 14px;
+            &:hover {
+                color: var(--main-color-one);
+            }
+        }
+    }
+}
+.info-bar-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.info-bar-bottom {
+    padding: 27px 0 29px;
+    .info-bottom-right {
+        display: flex;
+        align-items: center;
+        float: right;
+    }
+    .info-items-flex {
+        display: flex;
+    }
+    .call-us-part.white,
+    .mail-part.white,
+    .office-time-part.white {
+        &:hover{
+           .content{
+               .title{
+                color: var(--main-color-one);
+               }
+           }
+        }
+        .content{
+            .title{
+                color: #fff;
+            }
+        }
+    }
+    .call-us-part,
+    .mail-part,
+    .office-time-part {
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+        &:hover{
+            .icon{
+                transform: rotateY(360deg);
+            }
+            .title{
+                color: var(--main-color-one);
+            }
+        }
+        .title {
+            display: block;
+            color: var(--heading-color);
+            font-weight: 700;
+            text-transform: capitalize;
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 0px;
+            transition: all 300ms;
+        }
+        .icon {
+            color: var(--main-color-one);
+            font-size: 40px;
+            line-height: 50px;
+            margin-right: 10px;
+            transition: all 300ms;
+        }
+        .details{
+            font-size: 14px;
+            line-height: 24px;
+            color: var(--paragraph-color);
+        }
+    } 
+    .office-time-part{
+        margin-right: 0px;
+    }
+    .icon-part {
+        li {
+            display: inline;
+            margin-left: 5px;
+            &.cart{
+                position: relative;
+                z-index: 0;
+                .badge{
+                    position: absolute;
+                    right: -10px;
+                    top: -15px;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    background-color: var(--main-color-one);
+                    color: #fff;
+                    border-radius: 50%;
+                    padding: 0;
+                }
+            }
+            a {
+                font-size: 20px;
+                height: 30px;
+                width: 30px;
+                line-height: 30px;
+                border: 1px solid #e2e2e2;
+                display: inline-block;
+                text-align: center;
+                cursor: pointer;
+                transition: all 300ms;;
+                &:hover {
+                    color: var(--main-color-one);
+                    border: 1px solid var(--main-color-one);
+                }
+            }
+        }
+    }
+}
+
+/* Home 02 Info Bar */
+.header-home-02 .info-bar-bottom {
+    background-color: var(--secondary-color);
+    .call-us-part,
+    .mail-part,
+    .office-time-part {
+        .title{
+            color: var(--white-color);
+        }
+        .details {
+            color: rgba(#fff,.8);
+        }
+    }
+    .icon-part {
+        li {
+            a {
+                color: rgba(#fff,.8);
+                border: 1px solid rgba(#fff,.8);
+                &:hover {
+                    color: var(--main-color-one);
+                    border: 1px solid var(--main-color-one);
+                }
+            }
+        }
+    }
+}
